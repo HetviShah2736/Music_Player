@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/musicplayer.js"></script>
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/musicplayer.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/555d2d3b46.js" crossorigin="anonymous"></script>
+    <title>SoundSphere</title>
+</head>
+<body>
+    <header>
+
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span>Tracklist</h4>
+                <h4><span></span>Last Listening</h4>
+                <h4><span></span>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songitem item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span>01</span>
+                    <img src="./images/img1.jpg" alt="">
+                    <h5>Blank Space <br> <div class="subtitle">Taylor Swift</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="1"></i>
+                </li>
+                <li class="songitem item">
+                    <!-- <li class="songitem item" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <span>02</span>
+                    <img src="./images/img2.jpg" alt="">
+                    <h5>Ranjha<br> <div class="subtitle">B Praak</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="2"></i>
+                </li>
+                <li class="songitem item">
+                    <!-- <li class="songitem item" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <span>03</span>
+                    <img src="./images/img3.jpg" alt="">
+                    <h5>Perfect <br> <div class="subtitle">Ed Sheeran</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="3"></i>
+                </li>
+                <li class="songitem item">
+                    <span>04</span>
+                    <img src="./images/img4.jpg" alt="">
+                    <h5>Shape of You <br> <div class="subtitle">Ed Sheeran</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="4"></i>
+                </li>
+                <li class="songitem item">
+                    <span>05</span>
+                    <img src="./images/img7.jpg" alt="">
+                    <h5>Sugar <br> <div class="subtitle">Maroon 5</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="5"></i>
+                </li>
+                <li class="songitem item">
+                    <span>06</span>
+                    <img src="./images/img8.jpg" alt="">
+                    <h5>Maniac<br> <div class="subtitle">Conan Gray</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="6"></i>
+                </li>
+                <li class="songitem item">
+                    <span>07</span>
+                    <img src="./images/img9.jpg" alt="">
+                    <h5>Kabhi Kabhi Aditi<br> <div class="subtitle">Rashid Ali</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="7"></i>
+                </li>
+                <li class="songitem item">
+                    <span>08</span>
+                    <img src="./images/img5.jpg" alt="">
+                    <h5>Summer High<br> <div class="subtitle">AP dhillon</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="8"></i>
+                </li>
+                <li class="songitem item">
+                    <span>09</span>
+                    <img src="./images/img11.jpg" alt="">
+                    <h5>Sanak<br> <div class="subtitle">Badshah</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="9"></i>
+                </li>
+                <li class="songitem item">
+                    <span>10</span>
+                    <img src="./images/img10.jpeg" alt="">
+                    <h5>Tu aake dekh le<br> <div class="subtitle">King</div> </h5>
+                    <i class=" playlistplay fa-solid fa-play" id="10"></i>
+                </li>
+                
+            
+                
+            </div>
+        </div>
+
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <a href="http://127.0.0.1:5500/index1.html" style="text-decoration: none;"><li>Login <span></span></li></a>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="fa-brands fa-searchengin"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+                <div class="user">
+                    <img src="./images/rsh.png" alt="">
+                </div>
+
+            </nav>
+            <div class="content">
+                <h1>Harry Styles-As it Was</h1>
+                <p>Come on Harry, we wanna say goodnight to you</p>
+                <div class="buttons">
+                    <button>PLAY
+                    </button>
+                    <button>FOLLOW</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                   
+                </div>
+                <div class="pop_song">
+                    <ul class="owl-carousel">
+                    <li class="songitem item">
+                       <div class="img_play">
+                        <img src="./images/img12.jpeg" alt="">
+                        <i class=" playlistplay fa-solid fa-play" id="11"></i>
+                       </div>
+                       
+                        <h5>Kaleshi chori <br> <div class="subtitle">Taylor Swift</div> </h5>
+                    
+                    </li>
+                    <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img14.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="12"></i>
+                        </div>
+                        
+                         <h5>2002<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img15.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="13"></i>
+                        </div>
+                        
+                         <h5>Malang Sajna<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img16.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="14"></i>
+                        </div>
+                        
+                         <h5>Tum se hi<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img17.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="15"></i>
+                        </div>
+                        
+                         <h5>Cruel Summer<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img18.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="16"></i>
+                        </div>
+                        
+                         <h5>Love Dose<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img19.jpeg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="17"></i>
+                        </div>
+                        
+                         <h5>Bye<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img20.jpeg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="18"></i>
+                        </div>
+                        
+                         <h5>Baarishein<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img21.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="19"></i>
+                        </div>
+                        
+                         <h5>The Greatest<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img22.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="20"></i>
+                        </div>
+                        
+                         <h5>Kho gaye</h5><br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                    
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img24.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="21"></i>
+                        </div>
+                        
+                         <h5>Feather-sped up<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                     <li class="songitem item">
+                        <div class="img_play">
+                         <img src="./images/img25.jpg" alt="">
+                         <i class=" playlistplay fa-solid fa-play" id="22"></i>
+                        </div>
+                        
+                         <h5>Maharani<br> <div class="subtitle">Taylor Swift</div> </h5>
+                     
+                     </li>
+                   
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="popular_artists ">
+                <div class="h4">
+                    <h4>Popular Artists</h4>
+                  
+                </div>
+                <div class="item artists_bx">
+                    <ul class="owl-carousel">
+                    <li>
+                        <img src="./images/image1.jpg" class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/image2.jpeg"class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/image3.jpg"class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/img24.jpg"class="item" alt="">
+                    </li>
+                
+                    <li>
+                        <img src="./images/image10.jpg"class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/image6.jpg"class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/image7.jpeg"class="item" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/image8.jpeg"class="item" alt="">
+                    </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="masterplay">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="./images/img2.jpg" alt="" id="poster_master_play">
+            <h5 id="title">Ranjha <div class="subtitle">B praak</div></h5>
+            <div class="icons">
+                <!-- <i class="fa-solid shuffling fa-music"></i>
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play" id="masterplay"></i>
+                <i class="fa-solid fa-forward"></i>
+                <i class="fa-solid fa-download" id="download"></i> -->
+            </div>
+            <!-- <span id="currentstart">0:00</span> -->
+            <div class="bar">
+                <audio controls>
+           
+                    <source src="./songs/song22.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                
+                <!-- <input type="range" id="seek" min="0" max="100"> -->
+                <!-- <div class="bar2" id="bar2"></div> -->
+                <!-- <div class="dot"></div> -->
+            </div>
+            <!-- <span id="currentend">0:30</span> -->
+            <!-- <div class="vol">
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+                
+            </div> -->
+        </div>
+
+        <audio controls>
+           
+            <!-- <source src="song1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio> -->
+
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">MY SONGS</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="background-color: black;">
+
+                <audio controls>
+                    <source src="./songs/song8.mp3" type="audio/mpeg" >
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/song22.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/perfect.mp3" type="audio/mpeg" >
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/shapeofyou.mp3" type="audio/mpeg" >
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/song13.mp3" type="audio/mpeg" >
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/song9.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/song7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  <audio controls>
+                    <source src="./songs/song10.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Like song</button>
+              <button type="button" class="btn btn-primary">Add to library</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:7
+            }
+        }
+    })
+</script>
+</body>
+</html>
